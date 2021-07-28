@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import MadeWithFunctionalComp from './MadeWithFuncionalComp/MadeWithFunctionalComp';
+import MadeWithClassComponent from './MadeWithClassComponent/MadeWithClassComponent';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* made with class based components */}
+      <h1>Made with class based Component</h1>
+      <MadeWithClassComponent />
+
+      {/* made with functional components */}
+      <h1>made with Functional component</h1>
+      <MadeWithFunctionalComp />
     </div>
   );
-}
+};
 
 export default App;
